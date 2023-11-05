@@ -23,10 +23,10 @@
                 </a>
                 <ul class="header-list lists">
                     <li class="header-item">
-                        <a href="./index.html" class="header-link links">Studio</a>
+                        <a href="./index.html" class="header-link links current">Studio</a>
                     </li>
                     <li class="header-item">
-                        <a href="./portfolio.html" class="header-link links current">Portfolio</a>
+                        <a href="./portfolio.html" class="header-link links">Portfolio</a>
                     </li>
                     <li class="header-item">
                         <a href="/Contacts" class="header-link links">Contacts</a>
@@ -53,7 +53,14 @@
                 <h1 class="hero-title">
                     Effective Solutions<br />for Your Business
                 </h1>
-                <button type="button" class="hero-button button">Order Service</button>`
+                <button type="button" class="hero-button button" data-modal-open>Order Service</button>`
+                <div class="backdrop is hidden" data-modal>
+                    <div class="modal">
+                        <button type="button" class="modal-close" data-modal-close>
+                            &times;
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -356,6 +363,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
-
 </html>
